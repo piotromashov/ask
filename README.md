@@ -25,32 +25,14 @@ This tool allows you to describe what you want to do in plain English, and it wi
    echo 'export OPENAI_API_KEY=your_api_key_here' >> ~/.zshrc
    ```
 
-3. **Install required dependencies**:
+3. **Install the tool globally** using `uv`:
    ```bash
-   pip install openai
+   uv tool install .
    ```
+   
+   This will install the `ask` executable into your user tool environment, making it available from anywhere in your terminal.
 
-4. **Create the bin directory** (if it doesn't exist):
-   ```bash
-   mkdir -p ~/bin
-   ```
-
-5. **Add ~/bin to your PATH** (if not already done):
-   ```bash
-   echo 'export PATH="$HOME/bin:$PATH"' >> ~/.zshrc
-   ```
-
-6. **Make the script executable**:
-   ```bash
-   chmod +x ask.py
-   ```
-
-7. **Create a symbolic link** for easy access:
-   ```bash
-   ln -s ~/projects/gpt-cli-tool/ask.py ~/bin/ask
-   ```
-
-8. **Reload your shell configuration**:
+4. **Reload your shell configuration** (if you added the API key):
    ```bash
    source ~/.zshrc
    ```

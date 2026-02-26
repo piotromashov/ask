@@ -26,11 +26,13 @@ def ask_gpt(prompt: str) -> str:
         .strip()
     )
 
-
-if __name__ == "__main__":
+def main():
     if len(sys.argv) < 2:
         print("Usage: gptcmd.py 'Describe what you want to do'")
         sys.exit(1)
     user_prompt = " ".join(sys.argv[1:])
     command = ask_gpt(user_prompt)
     print(command)
+
+if __name__ == "__main__":
+    main()
