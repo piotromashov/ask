@@ -1,4 +1,4 @@
-# GPT CLI Tool
+# ask
 
 A command-line tool that uses OpenAI's GPT to help you generate Linux commands from natural language descriptions.
 
